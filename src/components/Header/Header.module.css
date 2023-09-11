@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    justify-content: center;
+    
+    padding: 10px 0;
+    background: rgb(153, 153, 255);
+
+
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(204, 204, 255);        
+    color: black;
+    width: 60px;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.42);
+    transition: background-color 0.5s;
+}
+
+.link:hover,
+.link:focus {
+    background-color: rgb(102, 0, 204);    
+    color:white;
+}
+.header_list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+.header_nav {
+    display: flex;
+    
+    
+}
