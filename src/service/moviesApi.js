@@ -26,7 +26,7 @@ export const getMovieDetails = async movieId => {
 
 export const getCast = async movieId => {
   const { data } = await instance.get(`/movie/${movieId}/credits`);
-  return data.results;
+  return data.cast;
 };
 
 export const getReviews = async movieId => {

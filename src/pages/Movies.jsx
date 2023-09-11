@@ -14,7 +14,7 @@ const Movies = () => {
     const movieTitle = searchParams.get('movieTitle');
 
     useEffect(() => {
-    
+    console.log(movieTitle);
         if (!movieTitle) {
             return;
         }
@@ -23,6 +23,7 @@ const Movies = () => {
         const searchMoviesByName = async () => {
             try {
                 const searchingMovie = await getSearchMovie(movieTitle);
+                
                 if (searchingMovie.length === 0) {
                     alert("Sorry, nothing find 😭");
                     return
@@ -40,11 +41,11 @@ const Movies = () => {
   const handleSubmit = query => {
     setSearchParams({movieTitle: query });
   };
-
+console.log(moviesList);
   return (
       <div>
            {isLoading && <Loader />}
-                MoviesSearch
+                
       <Form onSubmit={handleSubmit} nameButton={'Search Film'} />
       <MoviesList movies={moviesList} />
     </div>

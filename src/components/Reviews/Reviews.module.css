@@ -1,0 +1,10 @@
+.review_content{
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+.review_item {
+    margin-bottom: 60px;
+}

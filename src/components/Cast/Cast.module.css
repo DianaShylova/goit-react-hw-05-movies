@@ -1,0 +1,35 @@
+.cast_container {
+    display: block;
+    
+    
+    padding: 0;
+    text-align: center;
+    background-color: rgb(204, 204, 255);
+}
+
+.cast_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 720px;
+    list-style: none;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.actor_card{
+    margin: 20px 10px;
+    width: 200px;
+    height: 360px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(153, 153, 255);
+    box-shadow: 1px 1px 10px 1px rgba(102, 0, 204, 0.42);
+}
+
+.actor_pic {
+    width: 200px;
+    height: 300px;
+    padding: 0;
+    border-radius: 10px 10px 0px 0px;
+}

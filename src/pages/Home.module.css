@@ -1,0 +1,9 @@
+.home_container {
+    background-color:rgb(204, 204, 255);
+    padding: 90px 50px 10px 50px;
+    height: 100vh;
+}
+
+.title{
+    text-align: center;
+}
