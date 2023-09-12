@@ -1,10 +1,7 @@
 import { lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./Header/Header";
-/* const easyLazy = path => {
-    return lazy(() => import(`pages/${path}`));
-} */
-/* const Header = lazy(() => import("./Header/Header")); */
+
 const Home = lazy(() => import("../pages/Home"));
 const Movies = lazy(() => import("../pages/Movies"));
 const MovieDetails = lazy(() => import("../pages/MovieDetails/MovieDetails"));

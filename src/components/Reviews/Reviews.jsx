@@ -12,8 +12,7 @@ const Reviews = () => {
 
     }, [movieId]);
 
-    console.log(reviews);
-  
+      
     return (
        <> 
         <h2>Reviews</h2>
