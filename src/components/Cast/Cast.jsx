@@ -13,13 +13,13 @@ const Cast = () => {
       getCast(movieId).then(setCast)
 
     }, [movieId]);
-   console.log(cast);
+   
 
   return(
     <div className={css.cast_container}>{
-      cast &&
+      cast.length>0 &&
     (<ul className={css.cast_list}>
-      {cast.slice(0, 9).map((actor) => (
+      {cast.map((actor) => (
         <li key={actor.id} className={css.actor_card}>
           <img className={css.actor_pic}
             src={
